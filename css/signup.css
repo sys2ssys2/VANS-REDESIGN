@@ -1,0 +1,138 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Noto+Sans+KR:wght@100..900&family=Permanent+Marker&display=swap');
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign{
+ 
+    border: 1px solid #000;
+    box-shadow: 0 0 20px rgba(#333);
+    width: 500px;
+    background-color: white;
+  }
+  
+  .sign div b, input{
+  padding: 10px;
+  display: block;
+  transform: translateX(45px);
+  
+  }
+  
+  
+  
+  h1{
+    color: black;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .sign  div :is(input[type=text],input[type=password],input[type=email],input[type=tel]){
+  width: 400px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius:  3px;
+    outline: none;
+    padding: 8px;
+  
+    }
+  
+    .sign div :is(input[type=password], input[type=text], input[type=email],input[type=tel]):focus::placeholder{
+      opacity: 0;}
+  
+    .sign div :is(input[type=password],input[type=tel]):focus::placeholder{opacity: 0;}
+  
+   .sign div :is(input[type=email]){
+    width: 300px;
+    display: inline-block;
+   }
+   .sign select{
+  margin-left: 50px;
+   }
+  
+   .sign input[type=radio]{
+  display: inline-block;
+  margin-left: 20px;
+   }
+   
+  label{
+  padding: 50px;
+  
+  }
+  
+   .method{
+    display: inline-block;
+  margin-bottom: 10px;
+   }
+  
+  .submit{
+  display: inline-block;
+  }
+  
+  input[type=submit]{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  #vertification-code{
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  #vertification-code, #check{
+  display: inline;
+  }
+  
+  
+  .purpose{
+    margin-top: 10px;
+  }
+  
+  #visit{
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 150px;
+  }
+  
+  .user-check{
+    display: flex;
+    margin-top:5px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  button{
+    display: block;
+    margin: auto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  
+  button:hover{
+    background-color: white;
+    color: black;
+  }
+  
+
+
+

@@ -1,0 +1,1004 @@
+@import url(reset.css);
+@import url(signup.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Noto+Sans+KR:wght@100..900&family=Permanent+Marker&display=swap');
+
+
+body{
+  font-family: "Noto Sans KR", serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+ width: 100%;
+ overflow-x: hidden;
+}
+
+header{
+  /* border: 1px solid red; */
+width: 100%;
+background-color: white;
+height: 200px;
+display: flex;
+position: relative;
+}
+
+nav h1 img{
+/* border:  solid #000; */
+width: 210px;
+height: 150px;
+padding-top: 10px;
+}
+
+nav{
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.ls{
+ display: flex;
+gap: 30px;
+padding: 20px;
+/* align-items: flex-start; */
+}
+
+.ls a{
+  color: black;
+  font-size: 15px;
+white-space: nowrap;
+font-weight: bold;
+}
+
+.gnb{
+  width: 100%;
+  height: auto;
+  /* border: 1px solid #000; */
+  display: flex;
+margin: auto;
+ /* justify-content: space-between; */
+ align-items: center;
+ justify-content: space-around;
+/* position: relative; */
+}
+
+.gnb .main a{
+  width: 100px;
+  /* border: 1px solid #000; */
+  font-size: 25px;
+color: black;
+}
+
+.gnb .main a:hover{
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 10px;
+  font-style: italic;
+}
+
+.gnb .sub a:hover{
+  text-decoration: none;
+  font-style: normal;
+}
+
+.sub{
+  display: none;
+display: block;
+/* border: 1px solid #000; */
+position: absolute;
+top: 100%;
+z-index: 10;
+text-align: center;
+padding-left: 10px; 
+transform: translateX(-30%);
+margin: 0;
+padding: 0;
+}
+
+
+.gnb .sub li{
+/* border: 1px solid #000; */
+padding: 6px 10px;
+transition: 1s ease;
+}
+
+.gnb .sub li:hover{
+background-color: #999;
+font-weight: bold;
+}
+
+/* .gnb .sub li a{
+  color: white;
+}
+
+.gnb .sub li a:hover{
+  color: #333;
+} */
+
+.bg_box{
+  width: 100%;
+  height: 110px;
+  top: 100%;
+  left: 0;
+  background-color: #666;
+  position: absolute;
+  display: none;
+}
+
+.s1 h1{
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Archivo Black", sans-serif;
+
+}
+
+.new10 img{
+  display: block;
+  margin: auto;
+}
+
+.newprod{
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: "Permanent Marker", cursive;
+}
+
+.s2 h1{
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev
+{
+  color: black;
+}
+
+.swiper-pagination-bullet{
+  background-color: black !important; 
+  }
+
+
+.s3 h1{
+color: white;
+text-align: center;
+font-family: "Archivo Black", sans-serif;
+margin-top: 50px;
+font-size: 40px;
+margin-bottom: 50px;
+}
+
+.m{
+  display: flex;
+justify-content: center;
+margin-bottom: 70px;
+}
+
+.m a{
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  font-size: 50px;
+  margin: 50px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.m a:hover{
+  background-color: yellow;
+}
+
+footer{
+  text-align: center;
+  background-color: #999;
+  width: 100%;
+  padding: 70px;
+}
+
+.snsicon{
+/* border:  solid #000; */
+margin-top: 15px;
+}
+
+.snsicon a{
+
+  position: relative;
+display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+font-size: 30px;
+/* border: 1px solid #000; */
+width: 50px;
+color: black;
+}
+
+.snsicon a:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  width: 100%;
+  height: 0%;
+  border-radius: 50%;
+}
+.snsicon a .fa-brands{
+  position: relative;
+  transition: 0.5s;
+
+}
+
+.snsicon a:hover:before{
+  height:100%;
+ 
+}
+
+.snsicon a:first-child:before{background-color: royalblue;}
+.snsicon a:last-child:before{background-color: hotpink;}
+
+.snsicon a:hover .fa-brands{
+  color: white;
+  transform: rotateY(360deg);
+ 
+}
+
+
+/*--------------------메뉴 ABOUT--------------------------*/
+
+.abouts1{
+
+ margin: 0;
+ padding: 0;
+ width: 100%;
+
+}
+
+
+.backpicture img{
+
+  width: 100%;
+  height: auto;
+  image-rendering: optimizeQuality;
+}
+
+
+.locate .fa-solid{
+  color: white;
+  font-size: 20px;
+}
+
+.locate{
+  margin: 60px;
+}
+.abouts1 .locate span{
+  color: white;
+  font-size: 18px;
+}
+
+.about img{
+  width: 100%;
+  image-rendering: optimizeQuality;
+  height: auto;
+max-width: 100%;
+
+}
+
+.aboutcontent{
+
+  /* border: 1px solid white; */
+  width: 1100px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+box-shadow: 0 0 30px #fff;
+background-color: #333;
+margin-bottom: 60px;
+}
+
+.aboutcontent h3{
+  color: #ccc;
+  padding: 40px;
+ letter-spacing: 1px;
+}
+
+.aboutcontent:hover{
+transform: scaleX(1.1);
+}
+
+/*------------------------------------*/
+
+/*--------------New 메뉴-------------*/
+.newproducts1 .locate span{
+  color: white;
+  font-size: 18px;
+}
+
+.smenu ul{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.smenu li{
+  margin: 50px 50px; 
+  width: 200px;
+  height: 70px;
+  background-color: white;
+ text-align: center;
+ display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
+
+.smenu a{
+  color: black;
+  font-size: 25px;
+ font-weight: bold;
+}
+
+.smenu li:hover {
+  background-color: #333;
+}
+
+.smenu li:hover a{
+  color: white;
+}
+
+.newproduct h1{
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.carousel-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* hover효과 */
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* 반투명 배경 */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* 초기 상태 숨김 */
+  transition: opacity 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.carousel-slide:hover .caption {
+  opacity: 1; /* hover 시 나타나기 */
+}
+
+.caption h3{
+  color: yellow;
+}
+
+.caption .price{
+
+  font-weight: bold;
+}
+
+.caption .hot{
+  color: red;
+  margin-bottom: 3px;
+}
+
+/*-------------*/
+
+.secondc-slide:hover .caption{
+  opacity: 1;
+}
+
+
+.secondc{
+  margin-bottom: 50px;
+}
+
+/* collection 메뉴 */
+
+.collections1 .locate span{
+  color: white;
+  font-size: 18px;
+}
+
+.backpicture2 h1{
+  padding: 0;
+  margin: 0;
+width: 100%;
+height: 400px;
+background-color: #bbb;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 70px;
+font-weight: bold;
+font-family: "Permanent Marker", serif;
+}
+
+.collectionpic{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  
+}
+
+.collectionpic:hover img{
+  transform: scale(1.1);
+}
+
+
+.collectionpic img{
+  transition: transform 0.3s ease;
+}
+
+
+.container{
+  display: flex;
+  gap: 50px;
+justify-content: center;
+align-items: center;
+margin: 70px;
+
+}
+
+.card{
+  width: 300px;
+  height: 300px;
+ 
+}
+
+.card-box{
+
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  transition: 0.5s;
+}
+
+.card-box:before{
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+
+.card:nth-child(1) .card-box:before{
+background: linear-gradient(to top, crimson, transparent);
+}
+
+.card:nth-child(2) .card-box:before{
+  background: linear-gradient(to top, purple, transparent);
+  }
+
+  .card:nth-child(3) .card-box:before{
+    background: linear-gradient(to top, yellow, transparent);
+    }
+
+    .card-box img{
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .card-box .content{
+      position: absolute;
+      top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+ 
+    }
+
+    
+    .card-box .content p{
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .card:hover .card-box{transform: translateY(-20px);}
+    .card:hover .card-box .content{opacity: 1;}
+    .card:hover .card-box:before{
+      opacity: 1;
+      border-radius: 50%;
+    }
+    
+    .collectionimg{
+      display: flex;
+      /* background-color: #333; */
+    gap: 10px;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    
+   
+    }
+
+.mte{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+    .collectionimg img{
+      width: 400px;
+      padding: 30px;
+    
+    }
+
+    .mte1 img{
+      background-color: #999;
+      border-radius: 20px;
+    }
+
+    .mte2 img{
+      background-color: #666;
+      border-radius: 20px;
+    }
+
+    .mte3 img{
+      background-color: #333;
+      border-radius: 20px;
+    }
+
+
+
+    .content2{
+      color: white;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+text-align: center;
+transform: translate(50%,50%);
+opacity: 0;
+font-size: 18px;
+font-weight: bold;
+ }
+
+
+.mte:hover .content2{
+opacity: 1;
+}
+
+
+.mte img:nth-child(1):hover{
+  background: rgba(0,0,0,0.3);
+}
+    
+.mte img:nth-child(2):hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.mte img:nth-child(3):hover{
+  background: rgba(0,0,0.3);
+}
+
+.mte22{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.mmte1 img{
+  background-color: #333;
+  border-radius: 20px;
+}
+
+.mmte2 img{
+  background-color: #666;
+  border-radius: 20px;
+}
+
+.mmte3 img{
+  background-color: #999;
+  border-radius: 20px;
+}
+
+.content3{
+  color: white;
+  position: absolute;
+top: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+transform: translate(50%,50%);
+opacity: 0;
+font-size: 18px;
+font-weight: bold;
+}
+
+.collectionimg2 img{
+width: 400px;
+height: 300px;
+padding: 30px;
+}
+
+.mte22 img:nth-child(1):hover{
+background: rgba(0,0,0,0.3);
+}
+
+.mte22:hover .content3{
+opacity: 1;
+}
+
+.mte22 img:nth-child(2):hover{
+  background: rgba(0,0,0,0.3);
+  }
+
+  .mte22 img:nth-child(3):hover{
+    background: rgba(0,0,0,0.3);
+    }
+
+.mens1 .locate span{
+  color: white;
+}
+
+/*-----------men menu------*/
+  
+.visualpic2 img{
+  width: 100%;
+  height: auto;
+
+}
+
+.mens1 h1{
+  background-color: white;
+  color: black;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.item_list{ 
+	width: 1000px;
+	margin: auto;  
+	box-sizing:border-box;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 90px;
+  padding: 50px;
+}
+.item_list li{
+	width:400px; 
+	height:150px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+.item_list li img{
+  width: 400px;
+  height: auto;
+  background-color: #eee;
+}
+
+
+
+/* POPUP BOX ---------------------*/
+
+
+.modal{ /*검정배경*/
+	display:none; 
+	position: fixed; 
+	left:0; 
+  top: 0;
+	width:100%; 
+	height:100vh; 
+	background:rgba(0,0,0,0.7); 
+	z-index:1000;
+	overflow-x:hidden;
+	overflow-y:auto; 
+}
+
+.modalBox{
+	position: relative;
+	width: 1200px;
+	min-height: 90%;
+	margin: auto;
+}
+
+/*각 목록별 나오는 모달팝업 내용 나오는 부분*/
+.modal-content{   /*팝업내용박스*/
+	/* border: 5px solid #000; */
+	position:absolute;
+	width:1200px;
+	min-height: 100%;
+	background-color: #666;
+}
+.modal-content h3{
+	/* display:none; */
+  color: peachpuff;
+	font-size: 25px;
+  text-align: center;
+}
+
+.modal-content h4{
+  text-align: center;
+  font-size: 22px;
+}
+
+.modal-content li img{
+display: block;
+margin: auto;
+}
+
+
+/*버튼영역*/ 
+.modal-btn{
+	/* border: 1px solid red; */
+	position:absolute;
+	left: 95%;
+	top:30px;
+	/* position: fixed;
+	right: 100px;
+	top: 100px; */
+	width:80px;
+	height:150px;
+	color:#fff;
+	text-align:center;
+	overflow:hidden;
+	z-index:200;
+}
+.modal-btn i{cursor: pointer;}
+.close{
+	border-bottom:1px solid #fff;
+	padding-bottom: 10px;
+}
+.close i{font-size: 32px;}
+
+/*--------women menu--------*/
+
+.item_list2{ 
+	width: 1000px;
+	margin: auto;  
+	box-sizing:border-box;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 90px;
+  padding: 50px;
+}
+.item_list2 li{
+	width:400px; 
+	height:150px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+.item_list2 li img{
+  width: 400px;
+  height: auto;
+  background-color: #eee;
+}
+
+
+
+/* POPUP BOX2 ---------------------*/
+
+
+.modal2{ /*검정배경*/
+	display:none; 
+	position: fixed; 
+	left:0; 
+  top: 0;
+	width:100%; 
+	height:100vh; 
+	background:rgba(0,0,0,0.7); 
+	z-index:1000;
+	overflow-x:hidden;
+	overflow-y:auto; 
+}
+
+.modalBox2{
+	position: relative;
+	width: 1200px;
+	min-height: 90%;
+	margin: auto;
+}
+
+/*각 목록별 나오는 모달팝업 내용 나오는 부분*/
+.modal-content2{   /*팝업내용박스*/
+	/* border: 5px solid #000; */
+	position:absolute;
+	width:1200px;
+	min-height: 100%;
+	background-color: #333;
+}
+.modal-content2 h3{
+	/* display:none; */
+  color: peachpuff;
+	font-size: 25px;
+  text-align: center;
+}
+
+.modal-content2 h4{
+  text-align: center;
+  font-size: 22px;
+  color: #eee;
+}
+
+.modal-content2 li img{
+display: block;
+margin: auto;
+}
+
+/*sale menu---------------------------*/
+
+.salevisual1 img{
+width: 100%;
+height: auto;
+}
+
+.sales1 .locate span{
+  color: white;
+  font-size: 18px;
+}
+
+.sales1 h1{
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Archivo Black", sans-serif;
+}
+
+/*----------img 배치---*/
+
+.saleimage{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+/* border: 1px solid yellow; */
+position: relative;
+width: 100%;
+height: auto;
+
+}
+
+.saleimage img{
+  width: 550px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 10px;
+}
+
+.saleimg1, .saleimg2, .saleimg3, .saleimg5, .saleimg6, .saleimg7, .saleimg8, .saleimg9, .saleimg10, .saleimg11 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.caption1, .caption2, .caption4, .caption5, .caption6, .caption7, .caption8, .caption9, .caption10, .caption11 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background: rgba(0, 0, 0, 0.7); /* 배경을 반투명하게 */
+  color: #fff; /* 글자색 */
+  text-align: center;
+  padding: 10px;
+  opacity: 0; /* 기본적으로 숨김 */
+  transition: opacity 0.3s ease;
+}
+
+.saleimg1:hover .caption1,
+.saleimg2:hover .caption2,
+.saleimg3:hover .caption4,
+.saleimg5:hover .caption5,
+.saleimg6:hover .caption6,
+.saleimg7:hover .caption7,
+.saleimg8:hover .caption8,
+.saleimg9:hover .caption9,
+.saleimg10:hover .caption10,
+.saleimg11:hover .caption11 {
+  opacity: 1; /* hover 시 나타남 */
+}
+
+.caption1 h2, .caption2 h2, .caption4 h2, .caption5 h2, .caption6 h2, .caption7 h2, .caption8 h2, .caption9 h2, .caption10 h2, .caption11 h2{
+  color: crimson;
+}
+
+.caption1 h3, .caption2 h3, .caption4 h3, .caption5 h3, .caption6 h3, .caption7 h3, .caption8 h3, .caption9 h3, .caption10 h3, .caption11 h3{
+  color: peachpuff;
+}
+
+
+
+
+
